@@ -1,6 +1,6 @@
-﻿namespace PraticandoLogicaEx1
+﻿namespace Exercicio1
 {
-    class Variaveis
+    class LogEx1
     {
         static void Main(string[] args)
         {
