@@ -4,6 +4,7 @@
     {
         static void Main(string[] args)
         {
+            int salarioAtual, perReajuste, novoSalario ;
 
             Console.WriteLine("Digite o salario atual: ");
             double salarioAtual = Convert.ToDouble(Console.ReadLine());
