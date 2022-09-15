@@ -1,5 +1,6 @@
 ﻿namespace Exercicio5
 {
+    //Escreva um algoritmo para ler um valor (do teclado) e escrever (na tela) o seu antecessor. 
     class Ex5
     {
         static void Main(string[] args)

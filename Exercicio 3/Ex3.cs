@@ -1,5 +1,6 @@
 ﻿namespace Exercicio1
 {
+    //Os pares de instruções abaixo produzem o mesmo resultado?
     class LogEx1
     {
         static void Main(string[] args)
@@ -19,6 +20,10 @@
             Console.WriteLine(" b2 = " + b2);
             Console.WriteLine(" c1 = " + c1);
             Console.WriteLine(" c2 = " + c2);
+
+            Console.WriteLine("Apenas a1 e a2 produzem o mesmo resultado");
+
+            Console.ReadKey();
         }
     }
 }

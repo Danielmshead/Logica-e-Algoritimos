@@ -1,5 +1,14 @@
 ﻿namespace Exercicio2f
 {
+    //Analise os algoritmos abaixo e diga o que será impresso na tela ao serem executados:
+    //f)
+    //X <- 1
+    //Y <- 2
+    //Z <- Y + X
+    //Escrever Z
+    //X <- 5
+    //Y <- X + Z
+    //Escrever X, Y, Z
     class LogEx2f
     {
         static void Main(string[] args)

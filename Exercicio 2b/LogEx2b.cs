@@ -1,5 +1,15 @@
 ﻿namespace Exercicio2b
 {
+    //Analise os algoritmos abaixo e diga o que será impresso na tela ao serem executados:
+    //b)
+    //A <- 30
+    //B <- 20 
+    //C <- A + B
+    //Escrever C
+    //B <- 10
+    //Escrever B, C
+    //C <- A + B
+    //Escrever A, B, C
     class LogEx2b
     {
         static void Main(string[] args)

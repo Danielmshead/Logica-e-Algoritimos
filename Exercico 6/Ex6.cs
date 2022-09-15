@@ -1,5 +1,7 @@
 ﻿namespace Exercicio6
 {
+    //Escreva um algoritmo para ler as dimensões de um retângulo (base e altura), calcular e escrever a 
+    //área do retângulo.
     class Ex6
     {
         static void Main(string[] args)
