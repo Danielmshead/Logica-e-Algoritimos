@@ -14,16 +14,20 @@
             Console.WriteLine("Digite a hora que a partida finalizou: ");
             int horaFimPartida = Convert.ToInt32(Console.ReadLine());
 
-            int tempoTotal = horaFimPartida - horaInicioPartida;
+            int horasTotais = (horaFimPartida - horaInicioPartida);
 
-            if (tempoTotal < 0)
+            if (horaInicioPartida == horaFimPartida)
             {
-                int limite = tempoTotal + 24;
-                Console.WriteLine("O jogo teve " + limite + " horas de duração");
+                Console.WriteLine("Tempo máximo de duração da partida atinguida: 24 horas");
+            }
+            if (horaFimPartida >= horaInicioPartida)
+            {
+                Console.WriteLine("Duração da partida foi de " + horasTotais + " horas");
             }
             else
             {
-                Console.WriteLine("O jogo teve " + tempoTotal + " horas de duração");
+                horasTotais = (24 - horaInicioPartida) + horaFimPartida;
+                Console.WriteLine("Duração da partida foi de " + horasTotais + " horas");
             }
 
             Console.ReadKey();
