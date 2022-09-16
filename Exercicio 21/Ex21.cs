@@ -44,7 +44,7 @@
 
                 if (horasFimPartida > horasInicioPartida)
                 {
-                    horasTotais = (24 - horasFimPartida) + horasInicioPartida;
+                    horasTotais = horasFimPartida - horasInicioPartida;
                     Console.WriteLine("Duração da partida foi de " + horasTotais + " horas!!");
                 }
                 if (horasFimPartida < horasInicioPartida)
@@ -52,6 +52,7 @@
                     horasTotais = (24 - horasInicioPartida) + horasFimPartida;
                     Console.WriteLine("Duração da partida foi de " + horasTotais + " horas!");
                 }
+
                 else if (horasInicioPartida == horasFimPartida)
                 {
                     Console.WriteLine("Tempo máximo de duração da partida atingida (24 horas)");
