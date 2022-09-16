@@ -7,29 +7,58 @@
     {
         static void Main(string[] args)
         {
+            int horasFimPartida;
+            int horasInicioPartida;
+            int horasTotais;
 
-            Console.WriteLine("Digite a hora que a partida iniciou: ");
-            int horasInicioPartida = Convert.ToInt32(Console.ReadLine());
-
-            Console.WriteLine("Digite a hora que a partida finalizou: ");
-            int horasFimPartida = Convert.ToInt32(Console.ReadLine());
-
-            if (horasInicioPartida > horasFimPartida)
+            while (true)
             {
-                int horasTotais = (24 - horasInicioPartida) + horasFimPartida;
-                Console.WriteLine("Duração da partida foi de " + horasTotais + " horas!!");
+                Console.WriteLine("Digite a hora que a partida iniciou: ");
+                horasInicioPartida = Convert.ToInt32(Console.ReadLine());
+                if ((horasInicioPartida > 24) || (horasInicioPartida < 0))
+                {
+                    Console.WriteLine("Lembre se que um dia tem 24 horas! ");
+                    Console.WriteLine("Digite um valor válido!");
+                    Console.WriteLine("----------------------");
+                    continue;
+                }
+                else
+                {
+                    Console.WriteLine("Ok");
+                }
+
+                Console.WriteLine("Digite a hora que a partida finalizou: ");
+                horasFimPartida = Convert.ToInt32(Console.ReadLine());
+
+                if ((horasFimPartida > 24) || (horasFimPartida < 0))
+                {
+                    Console.WriteLine("Lembre se que um dia tem 24 horas! ");
+                    Console.WriteLine("Digite um valor válido!");
+                    Console.WriteLine("----------------------");
+                    continue;
+                }
+                else
+                {
+                    Console.WriteLine("Ok");
+                }
+
+                if (horasFimPartida > horasInicioPartida)
+                {
+                    horasTotais = (24 - horasFimPartida) + horasInicioPartida;
+                    Console.WriteLine("Duração da partida foi de " + horasTotais + " horas!!");
+                }
+                if (horasFimPartida < horasInicioPartida)
+                {
+                    horasTotais = (24 - horasInicioPartida) + horasFimPartida;
+                    Console.WriteLine("Duração da partida foi de " + horasTotais + " horas!");
+                }
+                else if (horasInicioPartida == horasFimPartida)
+                {
+                    Console.WriteLine("Tempo máximo de duração da partida atingida (24 horas)");
+                }
+
+                break;
             }
-            if (horasInicioPartida < horasFimPartida)
-            {
-                int horasTotais = horasFimPartida - horasInicioPartida;
-                Console.WriteLine("Duração da partida foi de " + horasTotais + " horas!");
-            }
-            else if (horasInicioPartida == horasFimPartida)
-            {
-                Console.WriteLine("Tempo máximo de duração da partida atingida (24 horas)" );
-            };
-
-            Console.ReadKey();
         }
     }
 }
