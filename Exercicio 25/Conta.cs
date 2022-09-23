@@ -21,7 +21,15 @@ namespace Exercicio25
             Valor = valor;
         }
 
-        public void Depositar (double valor)
+        public void Saldo (double valor)
+        {
+            Valor += valor;
+        }
+        public void Debito(double valor)
+        {
+            Valor -= valor;
+        }
+        public void Credito(double valor)
         {
             Valor += valor;
         }
